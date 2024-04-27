@@ -36,7 +36,7 @@ const TopBar = ({ title }) => {
         </div>
       </div>
       <div className="xm:flex-1">
-        <div className="flex sm:items-center sm:justify-end">
+        <div className="flex items-center justify-end">
           <div className="flex flex-col">
             <p className="font-Nunitoo font-medium text-10 sm:text-12 text-darkGray">
               Hello
