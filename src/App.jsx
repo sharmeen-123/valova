@@ -17,9 +17,7 @@ import User from "./pages/users/user";
 import Technician from "./pages/Technician/Technician";
 import Store from "./pages/Store/Store";
 import Inventory from "./pages/Inventory/Inventory";
-import SidebarIcon from "./assets/sidebar/threeLines.png";
-import BgTop from "./assets/loginBgTop.svg";
-import BgBottom from "./assets/loginBgBottom.svg";
+import AdminBg from './assets/AdminBg.svg'
 
 export const AuthContext = React.createContext();
 
@@ -73,21 +71,19 @@ function App() {
    // screen
    const LoginOutlet = (component) => {
     return (
-      <div className="relative h-screen w-screen bg-gray">
-       {/* Background image for top left corner */}
-       <div
-        className="absolute top-0 left-0 w-1/2 xm:w-1/3 md:w-1/4 lg:w-1/5 h-1/3 sm:h-1/2 bg-no-repeat bg-cover"
-        style={{ backgroundImage: `url(${BgTop})` }}
-      ></div>
-
-     
-        {component}
-         {/* Background image for bottom right corner */}
-      <div
-        className="absolute bottom-0 right-0 w-1/2 xm:w-1/3 md:w-1/4 lg:w-1/5 h-1/3 sm:h-1/2 bg-no-repeat bg-cover"
-        style={{ backgroundImage: `url(${BgBottom})` }}
-      ></div>
-      </div>
+      <div className="relative h-screen w-screen bg-gray"
+      style={{ 
+        backgroundImage: `url(${AdminBg})`, 
+        backgroundSize: 'cover', // Ensure the background image covers the entire container
+        backgroundRepeat: 'no-repeat', // Prevent the background image from repeating
+        backgroundPosition: 'center', // Center the background image within the container
+        backgroundAttachment: 'fixed' // Ensure the background image covers the entire viewport
+      }}
+    >
+      {component}
+    </div>
+    
+    
     );
   };
   return (

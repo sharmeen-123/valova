@@ -16,12 +16,12 @@ const TopBar = ({ title }) => {
           className="block md:hidden flex justify-center items-center"
           onClick={() => setHideSidebar(false)}
         >
-          <img src={Logo} alt="logo" width={35} />
+          <img src={Logo} alt="logo" className="h-5 w-5 object-cover"/>
         </div>
       )}
 
       <div className="xm:flex-1">
-        <div className="flex xm:items-center xm:justify-around">
+        <div className="flex items-center justify-around">
           <p className="font-Nunitoo font-medium text-14 sm:text-16 md:text-24 p-1">
             {title}
           </p>
