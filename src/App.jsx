@@ -17,7 +17,7 @@ import User from "./pages/users/user";
 import Technician from "./pages/Technician/Technician";
 import Store from "./pages/Store/Store";
 import Inventory from "./pages/Inventory/Inventory";
-import AdminBg from './assets/AdminBg.svg'
+import AdminBg from '/AdminBg.svg'
 
 export const AuthContext = React.createContext();
 
