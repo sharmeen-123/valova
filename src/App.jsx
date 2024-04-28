@@ -33,7 +33,7 @@ function App() {
   // screen
   const Outlet = (component) => {
     return (
-      <div className="w-screen h-screen bg-gray">
+      <div className="w-screen min-h-screen bg-gray">
         <div className="hidden md:block "
         style={{ overflowX: "hidden" }}>
          <style>{`
