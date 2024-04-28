@@ -71,10 +71,12 @@ function App() {
    // screen
    const LoginOutlet = (component) => {
     return (
-      <div className="relative h-screen w-screen bg-gray"
+      <div className=" bg-gray"
       style={{ 
         backgroundImage: `url(${AdminBg})`, 
         backgroundSize: 'cover', // Ensure the background image covers the entire container
+        height: '100vh', 
+        width:'100vw',
         backgroundRepeat: 'no-repeat', // Prevent the background image from repeating
         backgroundPosition: 'center', // Center the background image within the container
         backgroundAttachment: 'fixed' // Ensure the background image covers the entire viewport
