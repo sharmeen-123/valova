@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import Logo from "../../assets/sidebar/arrow.png";
-import Bg from "../../assets/sidebar/bgSidebar.svg";
 import { NavLink } from "react-router-dom";
 import DashRoutes from "../../constants/sidebarRoutes";
 import { AuthContext } from "../../App";

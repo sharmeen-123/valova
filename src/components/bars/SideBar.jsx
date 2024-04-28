@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../../assets/sidebar/logoSidebar.svg";
-import Bg from "../../assets/sidebar/bgSidebar.svg";
+import Bg from "/bgSidebar.svg";
 import { NavLink } from "react-router-dom";
 import DashRoutes from "../../constants/sidebarRoutes";
 
