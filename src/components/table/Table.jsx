@@ -146,11 +146,11 @@ const Table = ({ tableHeader, data, setData, cell2, cell3, cell4, selectedNo, se
           disabled={currentPage === 1}
           className="mr-2 px-4 py-2  border border-gray2 rounded-lg bg-white focus:outline-none hover:border-gray2"
         >
-        <p className="font-Nunitoo text-12 md:text-16">Previous</p>
+        <p className="font-Nunitoo text-black text-12 md:text-16">Previous</p>
           
         </button>
         <div className="flex justify-center my-2">
-          <p className="font-Nunitoo text-10 md:text-14 font-medium">
+          <p className="font-Nunitoo text-black text-10 md:text-14 font-medium">
             Page {currentPage} of {totalPages}
           </p>
         </div>
@@ -159,7 +159,7 @@ const Table = ({ tableHeader, data, setData, cell2, cell3, cell4, selectedNo, se
           disabled={indexOfLastItem >= data.length}
           className="px-4 py-2 border border-gray2 rounded-lg bg-white focus:outline-none  hover:border-gray2"
         >
-          <p className="font-Nunitoo text-12 md:text-16">Next</p>
+          <p className="font-Nunitoo text-black text-12 md:text-16">Next</p>
         </button>
       </div>
     </div>

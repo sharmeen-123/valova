@@ -82,7 +82,7 @@ const Login = () => {
               </p>
             </div>
             <button className="border-none focus:outline-none">
-              <p className="font-Nunitoo font-medium text-orange text-14 ">
+              <p className="font-Nunitoo font-medium bg-transparent text-orange text-14 ">
                 Forget Password?
               </p>
             </button>

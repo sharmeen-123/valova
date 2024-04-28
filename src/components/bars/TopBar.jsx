@@ -22,7 +22,7 @@ const TopBar = ({ title }) => {
 
       <div className="xm:flex-1">
         <div className="flex items-center justify-around">
-          <p className="font-Nunitoo font-medium text-14 sm:text-16 md:text-24 p-1">
+          <p className="font-Nunitoo font-medium text-black text-14 sm:text-16 md:text-24 p-1">
             {title}
           </p>
           <SearchFiels
@@ -38,10 +38,10 @@ const TopBar = ({ title }) => {
       <div className="xm:flex-1">
         <div className="flex items-center justify-end">
           <div className="flex flex-col">
-            <p className="font-Nunitoo font-medium text-10 sm:text-12 text-darkGray">
+            <p className="font-Nunitoo font-medium  text-10 sm:text-12 text-darkGray">
               Hello
             </p>
-            <p className="font-Nunitoo font-medium text-12  sm:text-14 md:text-16">
+            <p className="font-Nunitoo text-black font-medium text-12  sm:text-14 md:text-16">
               Admin
             </p>
           </div>
