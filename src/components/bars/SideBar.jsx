@@ -40,9 +40,7 @@ const Sidebar = () => {
                 <div className="flex ml-3">
                   <img src={val.icon} alt={val.name} width={18} />
                   <p
-                    className={`font-Nunitoo text-center ml-2 font-semibold ${
-                      ind === 0 ? "text-white2" : "text-white text-opacity-60"
-                    } text-16`}
+                    className={`font-Nunitoo text-center ml-2 font-semibold text-white text-opacity-60 text-16`}
                   >
                     {val.name}
                   </p>

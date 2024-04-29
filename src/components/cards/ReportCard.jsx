@@ -40,9 +40,9 @@ const ReportCard = () => {
             <SemiCirclePieChart />
 
             <div className="mb-4" style={{ marginTop: "-60px" }}>
-                <ChartBottom name="Users" number="122222" bg='purple' />
-                <ChartBottom name="Technicians" number="122222" bg='blue4' />
-                <ChartBottom name="Hardware Stores" number="122222" bg='blue6' />
+                <ChartBottom name="Users" number="122222" bg='#CB3CFF' />
+                <ChartBottom name="Technicians" number="122222" bg='#9A91FB' />
+                <ChartBottom name="Hardware Stores" number="122222" bg='#00C2FF' />
             </div>
 
            

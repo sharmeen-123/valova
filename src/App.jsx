@@ -17,6 +17,7 @@ import User from "./pages/users/user";
 import Technician from "./pages/Technician/Technician";
 import Store from "./pages/Store/Store";
 import Inventory from "./pages/Inventory/Inventory";
+import Settings from "./pages/Settings/Settings";
 import AdminBg from '/AdminBg.svg'
 
 export const AuthContext = React.createContext();
@@ -98,6 +99,7 @@ function App() {
           <Route path="/admin/technician" element={Outlet(<Technician />)} />
           <Route path="/admin/store" element={Outlet(<Store />)} />
           <Route path="/admin/inventory" element={Outlet(<Inventory />)} />
+          <Route path="/admin/settings" element={Outlet(<Settings />)} />
         </Routes>
       </AuthContext.Provider>
     </BrowserRouter>

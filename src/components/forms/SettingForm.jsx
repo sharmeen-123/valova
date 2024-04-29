@@ -2,17 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 
 import { InputDefault } from "../../components/inputFields/inputFiels";
 import PasswordField from "../../components/inputFields/passwordField";
+import ImageField from "../../components/inputFields/ImageField"
 import BlueButton from "../../components/buttons/BlueButton";
 
-const AddUserForm = ({onClose}) => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+const SettingForm = () => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
 
   const emailInputRef = useRef(null);
-  const nameInputRef = useRef(null);
-  const phoneInputRef = useRef(null);
   const passwordInputRef = useRef(null);
 
   const handleKeyDown = (e, nextRef) => {
@@ -27,38 +24,20 @@ const AddUserForm = ({onClose}) => {
   };
 
   useEffect(() => {
-    nameInputRef.current.focus();
+    emailInputRef.current.focus();
   }, []);
   return (
-    <div className="mx-4 md:ml-14 md:mr-48">
-      <div>
-        <label className="font-Nunitoo font-medium text-blue text-14 py-2">
-          Full Name
-        </label>
-        <InputDefault
-          setValue={setName}
-          handleKeyDown={handleKeyDown}
-          inputRef={nameInputRef}
-          nextRef={phoneInputRef}
-          Placeholder="John Doe"
-          bg={"white"}
-        />
-      </div>
-      {/* phone */}
-      <div className="mt-3">
-        <label className="font-Nunitoo font-medium text-blue text-14 py-2">
-          Phone Number
-        </label>
-        <InputDefault
-          setValue={setPhone}
-          handleKeyDown={handleKeyDown}
-          inputRef={phoneInputRef}
-          nextRef={emailInputRef}
-          Placeholder="+92 12333 33333"
-          bg={"white"}
-        />
-      </div>
-
+    <div>
+    <div className="border-b border-b-blue4">
+    <p className="font-Nunitoo font-semibold text-blue text-16 sm:text-24 mt-4">
+          Settings
+        </p>
+    </div>
+   
+        <div className="ml-3 mt-3">
+        <p className="font-Nunitoo font-semibold text-blue text-14 sm:text-16">
+          Security
+        </p>
       {/* email */}
 
       <div className="mt-3">
@@ -70,8 +49,8 @@ const AddUserForm = ({onClose}) => {
           handleKeyDown={handleKeyDown}
           inputRef={emailInputRef}
           nextRef={passwordInputRef}
-          Placeholder="John@gmail.com"
-          bg={"white"}
+          Placeholder="Change Email"
+          bg={"gray"}
         />
       </div>
 
@@ -86,18 +65,37 @@ const AddUserForm = ({onClose}) => {
           handleKeyDown={handleKeyDown}
           inputRef={passwordInputRef}
           nextRef={null}
-          Placeholder="Min 8 characters"
-          bg={"white"}
+          Placeholder="Change Password"
+          bg={"gray"}
         />
       </div>
       <div
-        className="flex justify-center my-2 sm:mt-10 sm:mb-14"
-        onClick={() => onClose()}
-      >
-        <BlueButton text="Submit" />
+        className="mt-4" >
+        <BlueButton text="Approve" />
       </div>
+        </div>
+
+
+        {/* change img */}
+        <div className="ml-3 mt-3">
+        <p className="font-Nunitoo font-semibold text-blue text-14 sm:text-16">
+          General
+        </p>
+      {/* email */}
+
+      <div className="mt-3">
+        
+        <ImageField
+          bg={"gray"}
+        />
+      </div>
+      <div
+        className="mt-4" >
+        <BlueButton text="Upload" />
+      </div>
+        </div>
     </div>
   );
 };
 
-export default AddUserForm;
+export default SettingForm;

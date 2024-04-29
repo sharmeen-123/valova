@@ -1,6 +1,5 @@
 
 import Dashboard from '../assets/sidebar/dashIcon.svg'
-import Sale from "../assets/sidebar/saleIcon.svg"
 import User from "../assets/sidebar/userIcon.svg"
 import Technicuian from "../assets/sidebar/technicianIcon.svg"
 import Store from '../assets/sidebar/storeIcon.svg'
@@ -14,12 +13,6 @@ export default [
       link: "/admin",
       icon: Dashboard,
       select: true,
-    },
-    {
-      name: "Sales",
-      link: "/admin",
-      icon: Sale,
-      select: false,
     },
     {
       name: "Users",
@@ -41,7 +34,7 @@ export default [
     },
     {
       name: "Settings",
-      link: "/admin",
+      link: "/admin/settings",
       icon: Setting,
       select: false,
     }
