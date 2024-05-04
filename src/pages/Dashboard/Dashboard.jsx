@@ -36,7 +36,7 @@ const Dashboard = () => {
     },
   ]);
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <TopBar title="Dashboard" />
       {/* body */}
       <div className="p-1 sm:p-4 py-6 mr-3">

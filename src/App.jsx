@@ -17,6 +17,7 @@ import User from "./pages/users/user";
 import Technician from "./pages/Technician/Technician";
 import Store from "./pages/Store/Store";
 import Inventory from "./pages/Inventory/Inventory";
+import Support from "./pages/Support/Support";
 import Settings from "./pages/Settings/Settings";
 import AdminBg from '/AdminBg.svg'
 
@@ -45,7 +46,7 @@ function App() {
           <div className="flex-grow ">
             <Sidebar />
             </div>
-            <div className="bg-gray h-full ml-60 flex-grow">{component}</div>
+            <div className="bg-gray h-full ml-60 flex-grow ">{component}</div>
           </div>
         </div>
 
@@ -99,6 +100,7 @@ function App() {
           <Route path="/admin/technician" element={Outlet(<Technician />)} />
           <Route path="/admin/store" element={Outlet(<Store />)} />
           <Route path="/admin/inventory" element={Outlet(<Inventory />)} />
+          <Route path="/admin/support" element={Outlet(<Support />)} />
           <Route path="/admin/settings" element={Outlet(<Settings />)} />
         </Routes>
       </AuthContext.Provider>

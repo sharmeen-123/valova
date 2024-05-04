@@ -33,6 +33,12 @@ export default [
       select: false,
     },
     {
+      name: "App Support",
+      link: "/admin/support",
+      icon: Setting,
+      select: false,
+    },
+    {
       name: "Settings",
       link: "/admin/settings",
       icon: Setting,
