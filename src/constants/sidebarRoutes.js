@@ -3,6 +3,7 @@ import Dashboard from '../assets/sidebar/dashIcon.svg'
 import User from "../assets/sidebar/userIcon.svg"
 import Technicuian from "../assets/sidebar/technicianIcon.svg"
 import Store from '../assets/sidebar/storeIcon.svg'
+import Chat from '../assets/sidebar/chat.svg'
 import Setting from '../assets/sidebar/settingsIcon.svg'
 
 
@@ -35,7 +36,7 @@ export default [
     {
       name: "App Support",
       link: "/admin/support",
-      icon: Setting,
+      icon: Chat,
       select: false,
     },
     {
